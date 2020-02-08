@@ -31,6 +31,7 @@ class MyHTMLParser(HTMLParser):
                             or ".informatics.uci.edu/" in crawled_url \
                             or ".stat.uci.edu/" in crawled_url \
                             or "today.uci.edu/department/information_computer_sciences" in crawled_url:
+                            self.hrefSet.add(crawled_url)
 
 def scraper(url, resp):
     print(f"from scraper: {url} Status: {resp.status}")
