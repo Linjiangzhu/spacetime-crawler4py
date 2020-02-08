@@ -3,6 +3,10 @@ ABOUT
 This is the base implementation of a full crawler that uses a spacetime
 cache server to receive requests.
 
+UPDATE ON 02/07/2020
+-------------------------
+group member: yuy
+
 CONFIGURATION
 -------------------------
 
