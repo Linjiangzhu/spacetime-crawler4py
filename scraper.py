@@ -1,6 +1,7 @@
 import re
 from urllib.parse import urlparse
 from html.parser import HTMLParser
+from urllib.request import urlopen
 
 class MyHTMLParser(HTMLParser):
     def __init__(self, url):
@@ -26,14 +27,15 @@ class MyHTMLParser(HTMLParser):
                             self.hrefSet.add(value)
 
 def scraper(url, resp):
+    print(f"from scraper: {url} Status: {resp.status}")
     links = extract_next_links(url, resp)
     return [link for link in links if is_valid(link)]
 
 def extract_next_links(url, resp):
     # Implementation requred.
-    with urlopen(url) as f:
-        htmlParser = MyHTMLParser()
-        htmlParser.feed(f.read().decode("utf-8"))
+    if 200 <= resp.status <= 500:
+        htmlParser = MyHTMLParser(resp.url)
+        htmlParser.feed(str(resp.raw_response.content))
     return htmlParser.getHrefList()
 
 def is_valid(url):
@@ -54,3 +56,7 @@ def is_valid(url):
     except TypeError:
         print ("TypeError for ", parsed)
         raise
+
+
+
+
