@@ -6,6 +6,7 @@ from urllib.request import urlopen
 class MyHTMLParser(HTMLParser):
     def __init__(self, url):
         HTMLParser.__init__(self)
+        self.hrefSet = set()
         self.url = url
         if self.url[-1] == "/":
             self.url = self.url[:-1]
@@ -14,17 +15,22 @@ class MyHTMLParser(HTMLParser):
         return list(self.hrefSet)
 
     def handle_starttag(self, tag, attrs):
-        self.hrefSet = set()
         if tag == "a":
             for name, value in attrs:
                 if name == "href":
                     if len(value) > 1:
+                        crawled_url = ""
                         if value[0] == "/" and value[1] == "/":
-                            self.hrefSet.add("http:" + value)
+                            crawled_url = "http:" + value
                         elif value[0] == "/" and value[1] != "/":
-                            self.hrefSet.add(self.url + value)
+                            crawled_url = self.url + value
                         elif value[0] != "#":
-                            self.hrefSet.add(value)
+                            crawled_url = value
+                        if ".ics.uci.edu" in crawled_url \
+                            or ".cs.uci.edu/" in crawled_url \
+                            or ".informatics.uci.edu/" in crawled_url \
+                            or ".stat.uci.edu/" in crawled_url \
+                            or "today.uci.edu/department/information_computer_sciences" in crawled_url:
 
 def scraper(url, resp):
     print(f"from scraper: {url} Status: {resp.status}")
@@ -36,7 +42,8 @@ def extract_next_links(url, resp):
     if 200 <= resp.status <= 500:
         htmlParser = MyHTMLParser(resp.url)
         htmlParser.feed(str(resp.raw_response.content))
-    return htmlParser.getHrefList()
+        return htmlParser.getHrefList()
+    return []
 
 def is_valid(url):
     try:
