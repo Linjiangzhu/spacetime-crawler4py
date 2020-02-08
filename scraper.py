@@ -1,5 +1,29 @@
 import re
 from urllib.parse import urlparse
+from html.parser import HTMLParser
+
+class MyHTMLParser(HTMLParser):
+    def __init__(self, url):
+        HTMLParser.__init__(self)
+        self.url = url
+        if self.url[-1] == "/":
+            self.url = self.url[:-1]
+
+    def getHrefList(self):
+        return list(self.hrefSet)
+
+    def handle_starttag(self, tag, attrs):
+        self.hrefSet = set()
+        if tag == "a":
+            for name, value in attrs:
+                if name == "href":
+                    if len(value) > 1:
+                        if value[0] == "/" and value[1] == "/":
+                            self.hrefSet.add("http:" + value)
+                        elif value[0] == "/" and value[1] != "/":
+                            self.hrefSet.add(self.url + value)
+                        elif value[0] != "#":
+                            self.hrefSet.add(value)
 
 def scraper(url, resp):
     links = extract_next_links(url, resp)
@@ -7,7 +31,10 @@ def scraper(url, resp):
 
 def extract_next_links(url, resp):
     # Implementation requred.
-    return list()
+    with urlopen(url) as f:
+        htmlParser = MyHTMLParser()
+        htmlParser.feed(f.read().decode("utf-8"))
+    return htmlParser.getHrefList()
 
 def is_valid(url):
     try:
