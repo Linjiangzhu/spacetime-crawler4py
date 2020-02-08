@@ -1,0 +1,877 @@
+IR F19 64162982
+2020-02-08 15:16:52,641 - FRONTIER - INFO - Found save file frontier.shelve, deleting it.
+2020-02-08 15:16:52,688 - Worker-0 - INFO - Downloaded https://www.stat.uci.edu, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:52,770 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/ugrad/courses/listing.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:52,822 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/ugrad/courses, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:52,866 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/ugrad, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:52,977 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/about/search/index.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,038 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/faculty/faculty_dept, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,266 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/faculty, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,496 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/about/facilities/index.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,554 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/about/facilities, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,605 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/about/about_safety.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,663 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/involved, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,719 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/community/events/competition, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,746 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/support/provide-projects, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:53,925 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/grad/ms-informatics, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,000 - Worker-0 - INFO - Downloaded http://www.informatics.uci.edu/grad/student-profiles/graduate-student-profile-moury-bidgoli, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,075 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/grad/student-profiles/graduate-student-profile-omar-asadi, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,156 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/grad/student-profiles/max-collins, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,229 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/grad/student-profiles/kaj-dreef, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,303 - Worker-0 - INFO - Downloaded http://www.informatics.uci.edu/explore/faculty-profiles/david-redmiles, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,373 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/debra-richardson, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,443 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~djr, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,466 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/katie-salen-tekinbas, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,536 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/kurt-squire, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,604 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/constance-steinkuehler, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,675 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/tess-tanenbaum, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,744 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/richard-taylor, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,813 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/bill-tomlinson, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,890 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~wmt, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,925 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/aaron-trammell, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:54,993 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/andre-van-der-hoek, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,062 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/sean-young, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,131 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/kai-zheng, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,200 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~zhengkai, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,221 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/explore/faculty-profiles/hadar-ziv, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,292 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~andre, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,359 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/~amezasor, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,402 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/chatbots, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,469 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/papers/technical-reports, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,509 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/papers/dissertations, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,549 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/code-orb-2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,588 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~nlopezgi/pubs_authorizer.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,609 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/people, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,650 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/codeexchange, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,694 - Worker-0 - INFO - Downloaded http://codeexchange.ics.uci.edu, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,716 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~lmartie, status <403>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,738 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/wp-login.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,762 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/contact/directions, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,799 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/contact, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,839 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/calico, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,878 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/crowd-development, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,925 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~tlatoza, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,956 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~adrianoc, status <403>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:55,981 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/porchlight, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,024 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/crowd-fault-localization, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,067 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/sponsors, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,108 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/opportunities, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,148 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/people/previous-members, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,225 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~nlopezgi, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,247 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~gbortis, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,276 - Worker-0 - INFO - Downloaded http://ics.uci.edu, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,352 - Worker-0 - INFO - Downloaded https://ics.uci.edu/about/search, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,375 - Worker-0 - INFO - Downloaded https://ics.uci.edu/about, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,399 - Worker-0 - INFO - Downloaded https://ics.uci.edu/ugrad, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,420 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/employment/employ_faculty.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,472 - Worker-0 - INFO - Downloaded https://ics.uci.edu/employment, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,495 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/community/news/view_news, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,549 - Worker-0 - INFO - Downloaded http://calendar.ics.uci.edu/calendar.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,607 - Worker-0 - INFO - Downloaded https://calendar.ics.uci.edu/auth/forgot, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,661 - Worker-0 - INFO - Downloaded https://calendar.ics.uci.edu/localist, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,719 - Worker-0 - INFO - Downloaded https://calendar.ics.uci.edu/department/information_computer_sciences/calendar, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,771 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/community, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,829 - Worker-0 - INFO - Downloaded https://ics.uci.edu/grad/admissions/index, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,854 - Worker-0 - INFO - Downloaded https://ics.uci.edu/involved, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,875 - Worker-0 - INFO - Downloaded https://ics.uci.edu/faculty/area, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,900 - Worker-0 - INFO - Downloaded https://ics.uci.edu/dept, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,925 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/lighthouse, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:56,966 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/crowddesign, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,006 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/papers/books, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,046 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,094 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/past-projects/code-topics, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,115 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~emilyo/SimSE, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,148 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/papers, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,200 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/knocap-2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,241 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,284 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/reserarch/chatbots, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,322 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,418 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/competition, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,457 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/dkutas, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,505 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/lab-updates, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,548 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2018/10/new-members-of-the-sdcl, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,587 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/social, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,630 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/10/linecept-use-class, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,670 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/butterworth, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,710 - Worker-0 - INFO - Downloaded https://redmiles.ics.uci.edu, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,745 - Worker-0 - INFO - Downloaded https://redmiles.ics.uci.edu/publication, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,792 - Worker-0 - INFO - Downloaded https://redmiles.ics.uci.edu/organizing, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,820 - Worker-0 - INFO - Downloaded https://redmiles.ics.uci.edu/reviewings, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,852 - Worker-0 - INFO - Downloaded https://redmiles.ics.uci.edu/research, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,883 - Worker-0 - INFO - Downloaded http://cradl.ics.uci.edu, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,922 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/publications, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:57,960 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/people, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,007 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~etrainer, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,063 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/inf143-SQ08, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,110 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~jajones, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,138 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~balani, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,183 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~balani/Publications.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,211 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ziv, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,262 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ziv/ooad/intro_to_se/index.htm, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,288 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/icse97, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,308 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ziv/ooad/classes/index.htm, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,332 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ziv/diss/abstractpaper/abstractpaper.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,355 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~neno/interests.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,381 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/WWWdocs/localFAQ.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,402 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ivan, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,423 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ziv/resume.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,451 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ziv/diss/intropaper/intropaper.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,477 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/atUCI.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,547 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Endeavors, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,574 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/endeavors, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,595 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Chimera/chimera.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,617 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/chimera, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,636 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~softtest/adamakegen.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,655 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/chiron, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,676 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/process, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,698 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/IRUS, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,831 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/publications/connectors, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,853 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/albums, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,877 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/about/director, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,898 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/content/timothy-menzies, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,920 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/directions, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,942 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/people/researchers, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,963 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/workshops, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:58,983 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/content/contact-isr, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,006 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/publications/awarded, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,028 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/upcoming, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,050 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/research, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,070 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/gsrs, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,091 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/happenings/alumni-profiles, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,111 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/past, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,138 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/content/myra-b-cohen, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,158 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/people/alumni, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,178 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/partnerships/sponsors, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,199 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/people/visitors, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,220 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/people/staff, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,243 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/content/richard-n-taylor-fellowship-software-engineering-established-0, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,265 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/happenings/spotlight, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,287 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/happenings/announcements, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,308 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/publications/dissertations, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,328 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/people/students, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,349 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/content/andrew-t-campbell, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,375 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/happenings/student-updates, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,399 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/content/fault-comprehension, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,428 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/conferences, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,451 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/happenings/director, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,473 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/dss, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,499 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/happenings/hot-research, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,522 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/partnerships/sponsorship, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,553 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/biblio, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,584 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/publications, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,611 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/about/about-isr, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,635 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/talks, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,658 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/happenings/news, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,681 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/content/software-engineering-ics-%E2%80%93-50-year-history-0, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,702 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/supported, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,723 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/people/faculty, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,745 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/isr-events/symposia, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,766 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~softtest/taos.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,788 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~softtest/prodag.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,809 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/arch, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,833 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~softtest/plumber.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,856 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/WebSoft, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,876 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/Arcadia, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,898 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/arch/argo.html, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,918 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Aflex-Ayacc/aflex-ayacc.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,940 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/teamware.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,963 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/historical.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:16:59,997 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/idemo.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,025 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/agenda.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,048 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/agenda2.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,069 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/info.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,089 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/project.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,110 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/browser.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,135 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/category.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,159 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/category2.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,182 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/instance.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,213 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/specification.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,247 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/attach.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,268 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/help.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,294 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/demo/help2.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,324 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Chiron/chiron.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,350 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/docs/packages.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,372 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/tags/tags.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,397 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/tags/test.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,420 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/tags/example.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,445 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Teamware/arch/arch.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,468 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/Endeavors/endeavors.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,489 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/hyperware, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,512 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/IRUS/CSS.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,533 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/Arcadia/C2/c2.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,559 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/IRUS/css.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,579 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/pub/arch/c2.html, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,600 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ziv/diss/conclusionpaper/conclusionpaper.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,623 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~ses, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,645 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~gmark, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,666 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~bsemaan, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,691 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~pr-react, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,712 - Worker-0 - INFO - Downloaded http://ics.uci.edu/~yiw, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,770 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~taow4, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,790 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/comments/feed, status <403>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,811 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/projects, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,846 - Worker-0 - INFO - Downloaded http://cradl.ics.uci.edu/theseus, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,874 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/news, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,912 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/category/cradl-news, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,942 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/wp-login.php, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,965 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/feed, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:00,987 - Worker-0 - INFO - Downloaded https://cradl.ics.uci.edu/sucses-is-coming, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,020 - Worker-0 - INFO - Downloaded https://redmiles.ics.uci.edu/teaching, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,092 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics203b-SQ05, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,141 - Worker-0 - INFO - Downloaded http://piki.ics.uci.edu/ics125s04, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,163 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics125-FQ01, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,202 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics125-FQ01/projects, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,229 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics125-FQ01/assignments, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,253 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics125-FQ01/assignments/teamlog.html, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,280 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~arijitg/students.html, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,302 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics229-SQ03, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,334 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~mvieira, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,357 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics227-FQ01, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,381 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/inf44-SQ07, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,419 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics104-WQ06, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,458 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics131-FQ04, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,498 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics227-SQ04, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,536 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/inf233-FQ07, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,578 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics205-FQ05, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,619 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/inf143-SQ09, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,656 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics131-FQ03, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,699 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics221-FQ03, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,790 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~cdesouza, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,814 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics280-WQ02, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,838 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~redmiles/ics229-WQ06, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,879 - Worker-0 - INFO - Downloaded https://redmiles.ics.uci.edu/people, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,910 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/former-student, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,950 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/uci, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:01,991 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/06/butterworth-design-competition-linecept-and-voice-guardians, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,034 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/01/philip-guo-to-visit-sdcl, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,076 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/software, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,119 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/research, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,162 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/05/exploring-the-unexplored-in-social-software-development-platforms, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,208 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/07/design-chatbots-talk-for-i-surf-2019-research-summer-program, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,260 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2018/12/saying-goodbye-and-welcome, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,302 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,386 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/conference, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,445 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/11/sdcl-at-ase-2015, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,485 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/06/icse-2014, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,526 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/05/lees-msr-2015-talk, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,567 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,623 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/02/we-redecorated-the-conference-room-crowdsourcing-affinity-diagrams, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,664 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,724 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/3, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,894 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/03/fernando-and-his-team-won-best-presentation-at-iconference, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,931 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/03/crowdsourcing-affinity-diagrams, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:02,992 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/02/welcome-fernando, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,038 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/4, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,103 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/5, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,164 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/06/welcome-danilo-and-william, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,201 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/05/scale-meeting-at-uc-irvine, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,238 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/07/welcome-gleiph, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,276 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/05/meet-the-sdcl-beowulf-cluster, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,314 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/04/visit-to-mobileworks-2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,351 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/6, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,414 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/04/tablet-tower-to-server-tower, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,452 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/02/welcome-mengyao, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,490 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/11/2013-acm-distinguished-scientists, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,535 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/04/new-visitors-from-the-netherlands, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,580 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/03/marian-petre-visit-3, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,621 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/12/visit-to-mobileworks, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,657 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/7, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,718 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/8, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,780 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/9, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,845 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/04/brazilian-collaborators-visit, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,885 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/09/sdcl-has-moved, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,926 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/directions, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:03,964 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/09/welcome-christian, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,004 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/05/isr-research-forum, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,046 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/03/papers-accepted, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,087 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/09/scale-meeting-in-nebraska, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,130 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/03/marian-petre-visit, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,168 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/09/welcome-michele, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,207 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/06/icse-2012, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,245 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/04/welcome-alfredo-motta, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,284 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/10, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,347 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/03/welcome-thomas-latoza, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,387 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/08/tablets, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,426 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/andre/page/11, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,494 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/08/nsf-grant-for-calico, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,532 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/04/microsoft-seif-award, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,574 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/calico, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,614 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/04/attending-icse, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,653 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/06/attending-hcic, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,691 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/07/848, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,731 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/04/249, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,772 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/06/graduates, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,816 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/~nmoura, status <404>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,839 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/04/nick-mangano-presents-at-arcs-dinner, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,876 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/06/brazilian-collaborators-visit-sdcl, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,915 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/09/883, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,954 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/11/seworld-sdcl, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:04,991 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/02/calico-demo-available, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,031 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/03/sdcl-hosts-scale, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,071 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/02/calico-at-cscw-2012, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,116 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/08/distributed-collaboration-grant, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,162 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/12/sdcl-on-github, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,225 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/lighthouse, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,274 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2011/10/902, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,321 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/04/jane-cleland-huang-visit, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,369 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/10/welcome-sergio, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,408 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/03/arie-van-deursen-visit, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,447 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/04/scale-meeting-in-snowy-pittsburgh, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,486 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/12/michele-thanks, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,525 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/12/porchlight-icse-paper, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,563 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/11/affinity-diagramming, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,602 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/10/groupwork-on-tablets, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,640 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/02/sdcl-icse-papers, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,679 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2012/12/marian-petre-visit-2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,716 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/05/icse-2013, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,753 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/09/crowdcode-at-crowdconf, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,798 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/09/congrats-dr-nick, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,836 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/07/fuse-2003, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,875 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/05/isr-research-forum-2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,928 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/10/scale-at-ibms-t-j-watson-research-center, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:05,967 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/10/article-published-in-empirical-software-engineering-journal, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,006 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/09/welcome-namrata, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,046 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/research/codeexchange, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,084 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/10/crowdconf-2013, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,122 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/05/lionel-briand-visit, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,164 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/12/paper-on-calico-to-appear-at-chi-2014, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,202 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/02/new-scholarships, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,241 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/12/new-workshop-on-crowdsourcing-in-software-engineering, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,279 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2013/10/visit-to-ge-research, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,316 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/06/grant-on-crowd-programming, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,355 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/04/won-2nd-place-in-2014-annual-autism-appjam, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,393 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/04/chi2014, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,432 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/07/congratulations-to-the-uc-irvine-design-competition-winners, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,470 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/10/uist-2014, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,511 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/07/press-on-crowd-programming-grant, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,557 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/08/codeexchange, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,601 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/07/crowd-programming-featured-on-acm-technews, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,643 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/12/congrats-dr-nick-lopez, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,684 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/08/thesis-defense-congratulations, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,722 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/10/welcome-consuelo, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,764 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/09/welcome-arturo-and-fabio, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,802 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/uncategorized, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,841 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/11/nick-dissertation-award, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,878 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2014/10/plateau-2014, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,932 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/02/we-won-the-reddit-hackathon, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:06,973 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/04/welcome-edgar, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,012 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/02/welcome-martin, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,052 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/03/paper-accepted-in-msr-2015, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,092 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/06/welcome-iago-and-nathan, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,131 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/06/sdcl-in-icse-2015, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,171 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/11/welcome-thomas-kwak, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,208 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/12/crowdsourcing-affinity-diagrams-2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,247 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/11/we-wish-martin-medina-well, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,289 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/06/congratulations-thomas, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,327 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/01/congratulations-lee-martie, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,366 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/06/welcome-gabriel, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,404 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/06/end-of-quarter-lunch-2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,442 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2015/12/simse, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,481 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/01/new-scholarship, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,520 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/03/congratulations-sara, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,559 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/03/congratulations-dr-gerald, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,597 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/author/adriana, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,638 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/03/lee-was-awarded-the-ibm-fellowship, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,677 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/travel, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,724 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/travel/page/2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,772 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/travel/page/3, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,809 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/visit, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,851 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/03/affinity-diagram-session, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,892 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/05/consuelos-icse-2016-presentation, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,933 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/05/i-htm, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:07,971 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2018/07/adrianas-icse-2018-presentation, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,010 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2018/07/marian-petre-in-collaboration-with-sdcl, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,053 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2017/06/congratulations-to-thomas-kwak, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,091 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/05/sdcl-team-in-data-science-hackathon, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,130 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2016/04/congratulations-to-arturo-di-lecce, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,168 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/3, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,226 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/4, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,286 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/5, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,345 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/6, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,403 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/7, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,457 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/8, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,514 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/9, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,569 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/10, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,625 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/11, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,683 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/12, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,741 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/page/13, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,790 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/ice-cream, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,837 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/07/sdcl-lunch-with-i-surf-students, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,876 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/workshop, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,915 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/workshop, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:08,958 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,007 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/2, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,051 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/3, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,094 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/4, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,139 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/5, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,188 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/6, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,238 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/7, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,285 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/8, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,330 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/9, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,374 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/category/news/page/10, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,415 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/guests, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,455 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/visit, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,497 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2018/10/ice-cream-meeting-sdcl-social, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,535 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/03/lunch-meeting-with-consuelo-lopez, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,575 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/development, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,624 - Worker-0 - INFO - Downloaded https://www.ics.uci.edu/~brodbeck, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,667 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/%7Earcadia, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,692 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/%7Eirus, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,722 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/CORPS, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,745 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/software, status <601>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,767 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/%7Eicgse2016, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,818 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/2019/07/i-surf-undergraduate-students-presented-progress-on-their-summer-research-projects, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,855 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/linecept, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,893 - Worker-0 - INFO - Downloaded http://sdcl.ics.uci.edu/tag/platforms, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:09,933 - Worker-0 - INFO - Downloaded http://www.ics.uci.edu/informatics, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:10,010 - Worker-0 - INFO - Downloaded https://www.informatics.uci.edu/brochure-tiles/what-we-build, status <200>, using cache ('styx.ics.uci.edu', 9009).
+2020-02-08 15:17:10,167 - Worker-0 - INFO - Downloaded http://www.informatics.uci.edu/files/pdf/InformaticsBrochure-March2018, status <200>, using cache ('styx.ics.uci.edu', 9009).
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/home/yuy31/cs121/spacetime-crawler4py/crawler/worker.py", line 28, in run
+    scraped_urls = scraper(tbd_url, resp)
+  File "/home/yuy31/cs121/spacetime-crawler4py/scraper.py", line 41, in scraper
+    links = extract_next_links(url, resp)
+  File "/home/yuy31/cs121/spacetime-crawler4py/scraper.py", line 48, in extract_next_links
+    htmlParser.feed(str(resp.raw_response.content))
+  File "/usr/lib64/python3.6/html/parser.py", line 111, in feed
+    self.goahead(0)
+  File "/usr/lib64/python3.6/html/parser.py", line 179, in goahead
+    k = self.parse_html_declaration(i)
+  File "/usr/lib64/python3.6/html/parser.py", line 264, in parse_html_declaration
+    return self.parse_marked_section(i)
+  File "/usr/lib64/python3.6/_markupbase.py", line 149, in parse_marked_section
+    sectName, j = self._scan_name( i+3, i )
+  File "/usr/lib64/python3.6/_markupbase.py", line 391, in _scan_name
+    % rawdata[declstartpos:declstartpos+20])
+  File "/usr/lib64/python3.6/_markupbase.py", line 34, in error
+    "subclasses of ParserBase must override error()")
+NotImplementedError: subclasses of ParserBase must override error()
+
+site crawled: 1
+site crawled: 2
+site crawled: 3
+site crawled: 4
+site crawled: 5
+site crawled: 6
+site crawled: 7
+site crawled: 8
+site crawled: 9
+site crawled: 10
+site crawled: 11
+site crawled: 11
+site crawled: 12
+site crawled: 13
+site crawled: 14
+site crawled: 15
+site crawled: 16
+site crawled: 17
+site crawled: 18
+site crawled: 19
+site crawled: 19
+site crawled: 20
+site crawled: 21
+site crawled: 22
+site crawled: 23
+site crawled: 24
+site crawled: 25
+site crawled: 26
+site crawled: 27
+site crawled: 28
+site crawled: 29
+site crawled: 30
+site crawled: 30
+site crawled: 31
+site crawled: 32
+site crawled: 33
+site crawled: 34
+site crawled: 35
+site crawled: 36
+site crawled: 37
+site crawled: 37
+site crawled: 38
+site crawled: 39
+site crawled: 39
+site crawled: 39
+site crawled: 40
+site crawled: 41
+site crawled: 42
+site crawled: 43
+site crawled: 44
+site crawled: 44
+site crawled: 44
+site crawled: 45
+site crawled: 46
+site crawled: 47
+site crawled: 48
+site crawled: 49
+site crawled: 49
+site crawled: 50
+site crawled: 51
+site crawled: 51
+site crawled: 51
+site crawled: 51
+site crawled: 52
+site crawled: 52
+site crawled: 53
+site crawled: 54
+site crawled: 55
+site crawled: 56
+site crawled: 57
+site crawled: 58
+site crawled: 58
+site crawled: 58
+site crawled: 58
+site crawled: 58
+site crawled: 59
+site crawled: 60
+site crawled: 61
+site crawled: 62
+site crawled: 62
+site crawled: 62
+site crawled: 63
+site crawled: 64
+site crawled: 65
+site crawled: 66
+site crawled: 67
+site crawled: 68
+site crawled: 69
+site crawled: 70
+site crawled: 71
+site crawled: 72
+site crawled: 73
+site crawled: 74
+site crawled: 75
+site crawled: 76
+site crawled: 77
+site crawled: 78
+site crawled: 79
+site crawled: 80
+site crawled: 81
+site crawled: 82
+site crawled: 83
+site crawled: 84
+site crawled: 84
+site crawled: 85
+site crawled: 86
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 87
+site crawled: 88
+site crawled: 89
+site crawled: 89
+site crawled: 90
+site crawled: 90
+site crawled: 90
+site crawled: 90
+site crawled: 90
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 91
+site crawled: 92
+site crawled: 92
+site crawled: 93
+site crawled: 94
+site crawled: 95
+site crawled: 96
+site crawled: 97
+site crawled: 98
+site crawled: 99
+site crawled: 100
+site crawled: 101
+site crawled: 102
+site crawled: 102
+site crawled: 103
+site crawled: 104
+site crawled: 105
+site crawled: 106
+site crawled: 107
+site crawled: 107
+site crawled: 107
+site crawled: 108
+site crawled: 109
+site crawled: 110
+site crawled: 111
+site crawled: 112
+site crawled: 112
+site crawled: 112
+site crawled: 113
+site crawled: 113
+site crawled: 113
+site crawled: 113
+site crawled: 113
+site crawled: 113
+site crawled: 113
+site crawled: 113
+site crawled: 114
+site crawled: 114
+site crawled: 114
+site crawled: 115
+site crawled: 115
+site crawled: 116
+site crawled: 117
+site crawled: 118
+site crawled: 118
+site crawled: 119
+site crawled: 120
+site crawled: 121
+site crawled: 121
+site crawled: 122
+site crawled: 123
+site crawled: 124
+site crawled: 125
+site crawled: 125
+site crawled: 126
+site crawled: 126
+site crawled: 127
+site crawled: 128
+site crawled: 129
+site crawled: 130
+site crawled: 131
+site crawled: 132
+site crawled: 133
+site crawled: 134
+site crawled: 135
+site crawled: 136
+site crawled: 136
+site crawled: 137
+site crawled: 137
+site crawled: 138
+site crawled: 139
+site crawled: 140
+site crawled: 141
+site crawled: 142
+site crawled: 143
+site crawled: 144
+site crawled: 145
+site crawled: 146
+site crawled: 147
+site crawled: 148
+site crawled: 149
+site crawled: 150
+site crawled: 151
+site crawled: 152
+site crawled: 153
+site crawled: 154
+site crawled: 155
+site crawled: 156
+site crawled: 157
+site crawled: 158
+site crawled: 159
+site crawled: 160
+site crawled: 161
+site crawled: 162
+site crawled: 163
+site crawled: 164
+site crawled: 165
+site crawled: 166
+site crawled: 167
+site crawled: 168
+site crawled: 169
+site crawled: 170
+site crawled: 171
+site crawled: 172
+site crawled: 173
+site crawled: 174
+site crawled: 175
+site crawled: 176
+site crawled: 177
+site crawled: 178
+site crawled: 179
+site crawled: 180
+site crawled: 181
+site crawled: 182
+site crawled: 183
+site crawled: 184
+site crawled: 185
+site crawled: 186
+site crawled: 187
+site crawled: 188
+site crawled: 189
+site crawled: 190
+site crawled: 191
+site crawled: 192
+site crawled: 193
+site crawled: 194
+site crawled: 195
+site crawled: 196
+site crawled: 197
+site crawled: 198
+site crawled: 199
+site crawled: 199
+site crawled: 200
+site crawled: 201
+site crawled: 202
+site crawled: 203
+site crawled: 204
+site crawled: 205
+site crawled: 206
+site crawled: 207
+site crawled: 208
+site crawled: 209
+site crawled: 210
+site crawled: 211
+site crawled: 212
+site crawled: 213
+site crawled: 214
+site crawled: 215
+site crawled: 216
+site crawled: 217
+site crawled: 218
+site crawled: 219
+site crawled: 220
+site crawled: 221
+site crawled: 222
+site crawled: 223
+site crawled: 224
+site crawled: 225
+site crawled: 226
+site crawled: 227
+site crawled: 228
+site crawled: 229
+site crawled: 230
+site crawled: 231
+site crawled: 232
+site crawled: 233
+site crawled: 234
+site crawled: 235
+site crawled: 236
+site crawled: 237
+site crawled: 238
+site crawled: 239
+site crawled: 240
+site crawled: 241
+site crawled: 242
+site crawled: 243
+site crawled: 244
+site crawled: 245
+site crawled: 246
+site crawled: 247
+site crawled: 248
+site crawled: 249
+site crawled: 250
+site crawled: 251
+site crawled: 252
+site crawled: 253
+site crawled: 254
+site crawled: 255
+site crawled: 256
+site crawled: 257
+site crawled: 258
+site crawled: 259
+site crawled: 260
+site crawled: 261
+site crawled: 262
+site crawled: 263
+site crawled: 264
+site crawled: 265
+site crawled: 266
+site crawled: 267
+site crawled: 268
+site crawled: 269
+site crawled: 270
+site crawled: 271
+site crawled: 272
+site crawled: 273
+site crawled: 274
+site crawled: 275
+site crawled: 276
+site crawled: 277
+site crawled: 278
+site crawled: 279
+site crawled: 280
+site crawled: 281
+site crawled: 282
+site crawled: 283
+site crawled: 284
+site crawled: 285
+site crawled: 286
+site crawled: 287
+site crawled: 288
+site crawled: 289
+site crawled: 290
+site crawled: 291
+site crawled: 292
+site crawled: 293
+site crawled: 294
+site crawled: 295
+site crawled: 296
+site crawled: 297
+site crawled: 298
+site crawled: 299
+site crawled: 300
+site crawled: 301
+site crawled: 302
+site crawled: 303
+site crawled: 304
+site crawled: 305
+site crawled: 306
+site crawled: 307
+site crawled: 308
+site crawled: 309
+site crawled: 310
+site crawled: 311
+site crawled: 312
+site crawled: 313
+site crawled: 314
+site crawled: 314
+site crawled: 314
+site crawled: 314
+site crawled: 315
+site crawled: 316
+site crawled: 317
+site crawled: 318
+site crawled: 319

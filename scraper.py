@@ -22,28 +22,22 @@ class MyHTMLParser(HTMLParser):
                         domain_url = "https://" + urlparse(self.url).netloc
                         crawled_url = ""
                         if value[0] == "/" and value[1] == "/":
-                            crawled_url = "http:" + value
+                            crawled_url = "https:" + value
                         elif value[0] == "/" and value[1] != "/":
                             crawled_url = domain_url + value
                         elif value[0] != "#":
                             crawled_url = value
-                        if re.match(r"https://www.ics.uci.edu", crawled_url) != None \
-                            or re.match(r"https://www.cs.uci.edu", crawled_url) != None \
-                            or re.match(r"https://www.stat.uci.edu", crawled_url) != None \
-                            or re.match(r"https://www.informatics.uci.edu", crawled_url) != None \
-                            or re.match(r"https://today.uci.edu/department/information_computer_sciences", crawled_url) != None:
+                        parsedObj = urlparse(crawled_url)
+                        crawled_url = parsedObj.scheme + "://" + parsedObj.netloc + parsedObj.path
+                        if re.search(r".ics.uci.edu", crawled_url) != None \
+                            or re.search(r".cs.uci.edu", crawled_url) != None \
+                            or re.search(r".stat.uci.edu", crawled_url) != None \
+                            or re.search(r".informatics.uci.edu", crawled_url) != None \
+                            or re.search(r"today.uci.edu/department/information_computer_sciences", crawled_url) != None:
                             self.hrefSet.add(crawled_url)
-                        '''
-                        if ".ics.uci.edu" in crawled_url \
-                            or ".cs.uci.edu/" in crawled_url \
-                            or ".informatics.uci.edu/" in crawled_url \
-                            or ".stat.uci.edu/" in crawled_url \
-                            or "today.uci.edu/department/information_computer_sciences" in crawled_url:
-                            self.hrefSet.add(crawled_url)
-'''
-
+                        
 def scraper(url, resp):
-    print(f"from scraper: {url} Status: {resp.status}")
+    #print(f"from scraper: {url} Status: {resp.status}")
     links = extract_next_links(url, resp)
     return [link for link in links if is_valid(link)]
 
