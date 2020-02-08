@@ -19,19 +19,28 @@ class MyHTMLParser(HTMLParser):
             for name, value in attrs:
                 if name == "href":
                     if len(value) > 1:
+                        domain_url = "https://" + urlparse(self.url).netloc
                         crawled_url = ""
                         if value[0] == "/" and value[1] == "/":
                             crawled_url = "http:" + value
                         elif value[0] == "/" and value[1] != "/":
-                            crawled_url = self.url + value
+                            crawled_url = domain_url + value
                         elif value[0] != "#":
                             crawled_url = value
+                        if re.match(r"https://www.ics.uci.edu", crawled_url) != None \
+                            or re.match(r"https://www.cs.uci.edu", crawled_url) != None \
+                            or re.match(r"https://www.stat.uci.edu", crawled_url) != None \
+                            or re.match(r"https://www.informatics.uci.edu", crawled_url) != None \
+                            or re.match(r"https://today.uci.edu/department/information_computer_sciences", crawled_url) != None:
+                            self.hrefSet.add(crawled_url)
+                        '''
                         if ".ics.uci.edu" in crawled_url \
                             or ".cs.uci.edu/" in crawled_url \
                             or ".informatics.uci.edu/" in crawled_url \
                             or ".stat.uci.edu/" in crawled_url \
                             or "today.uci.edu/department/information_computer_sciences" in crawled_url:
                             self.hrefSet.add(crawled_url)
+'''
 
 def scraper(url, resp):
     print(f"from scraper: {url} Status: {resp.status}")
@@ -40,7 +49,7 @@ def scraper(url, resp):
 
 def extract_next_links(url, resp):
     # Implementation requred.
-    if 200 <= resp.status <= 500:
+    if 200 <= resp.status < 400:
         htmlParser = MyHTMLParser(resp.url)
         htmlParser.feed(str(resp.raw_response.content))
         return htmlParser.getHrefList()
