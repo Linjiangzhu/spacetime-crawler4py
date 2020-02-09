@@ -25,10 +25,10 @@ class Worker(Thread):
             self.logger.info(
                 f"Downloaded {tbd_url}, status <{resp.status}>, "
                 f"using cache {self.config.cache_server}.")
-            scraped_urls = scraper(tbd_url, resp)
-            if len(scraped_urls) != 0:
+            if resp.status < 400:
                 self.crawledSiteCount += 1
                 self.crawledSiteSet.add(tbd_url)
+            scraped_urls = scraper(tbd_url, resp)                
             print(f"\rsite crawled: {self.crawledSiteCount}")
             for scraped_url in scraped_urls:
                 if scraped_url not in self.crawledSiteSet:
