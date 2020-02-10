@@ -20,7 +20,9 @@ def isValidUrl(url: str) -> bool:
         or ".informatics.uci.edu" in parsedUrl.netloc \
         or ".stat.uci.edu" in parsedUrl.netloc \
         or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc \
-        and "/calendar/" not in parsedUrl.path
+        and "wics.ics.uci.edu/events" not in (parsedUrl.netloc + parsedUrl.path)\
+        and "/calendar/" not in parsedUrl.path \
+        and "/pdf/" not in parsedUrl.path
                         
 def scraper(url, resp):
     #print(f"from scraper: {url} Status: {resp.status}")
