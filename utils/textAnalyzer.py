@@ -31,8 +31,13 @@ class TextAnalyzer:
         except UnicodeDecodeError:
             decode_text = self.rawText.decode("iso8859")    
         soup = BeautifulSoup(decode_text, 'lxml')
+        for script in soup(['style', 'script', 'head', 'title', 'meta', '[document]']):
+            script.extract()
         self.text = soup.get_text()
     def execute(self):
+        self.text = ""
+        self.wordCount = 0
+        self.tokenDict = defaultdict(int)
         self.textExtract()
         for line in self.text.splitlines():
             for w in re.findall(r"[a-zA-Z0-9]+", line):
