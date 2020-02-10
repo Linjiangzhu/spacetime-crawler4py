@@ -11,6 +11,7 @@ class Worker(Thread):
         self.logger = get_logger(f"Worker-{worker_id}", "Worker")
         self.config = config
         self.frontier = frontier
+        self.requestedSiteCount = 0
         self.crawledSiteCount = 0
         self.crawledSiteSet = set()
         super().__init__(daemon=True)
@@ -24,12 +25,16 @@ class Worker(Thread):
             resp = download(tbd_url, self.config, self.logger)
             self.logger.info(
                 f"Downloaded {tbd_url}, status <{resp.status}>, "
-                f"using cache {self.config.cache_server}.")
+                f"using cache {self.config.cache_server}."
+                f"\nsite requested: {self.requestedSiteCount}"
+                f"\nsite crawled: {self.crawledSiteCount}"
+            )
             scraped_urls = scraper(tbd_url, resp)
-            if len(scraped_urls) != 0:
+            self.requestedSiteCount += 1
+            if 200 <= resp.status < 400:
                 self.crawledSiteCount += 1
-                self.crawledSiteSet.add(tbd_url)
-            print(f"\rsite crawled: {self.crawledSiteCount}")
+            self.crawledSiteSet.add(tbd_url)
+            #print(f"site requested: {self.requestedSiteCount}\nsite crawled: {self.crawledSiteCount}")
             for scraped_url in scraped_urls:
                 if scraped_url not in self.crawledSiteSet:
                     self.frontier.add_url(scraped_url)

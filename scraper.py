@@ -1,40 +1,26 @@
 import re
 from urllib.parse import urlparse
-from html.parser import HTMLParser
-from urllib.request import urlopen
+from bs4 import BeautifulSoup
+from encodings.aliases import aliases
 
-class MyHTMLParser(HTMLParser):
-    def __init__(self, url):
-        HTMLParser.__init__(self)
-        self.hrefSet = set()
-        self.url = url
-        if self.url[-1] == "/":
-            self.url = self.url[:-1]
+# turn href into a valid request url
+def handleHref(href: str, domain: str) -> str:
+    #print(f"NOW HANDLE DOMAIN: {domain} HREF: {href}")
+    parsedUrl = urlparse(href)
+    if parsedUrl.netloc == "":
+        return "http://" + domain + parsedUrl.path
+    return "http://" + parsedUrl.netloc + parsedUrl.path
 
-    def getHrefList(self):
-        return list(self.hrefSet)
 
-    def handle_starttag(self, tag, attrs):
-        if tag == "a":
-            for name, value in attrs:
-                if name == "href":
-                    if len(value) > 1:
-                        domain_url = "https://" + urlparse(self.url).netloc
-                        crawled_url = ""
-                        if value[0] == "/" and value[1] == "/":
-                            crawled_url = "https:" + value
-                        elif value[0] == "/" and value[1] != "/":
-                            crawled_url = domain_url + value
-                        elif value[0] != "#":
-                            crawled_url = value
-                        parsedObj = urlparse(crawled_url)
-                        crawled_url = parsedObj.scheme + "://" + parsedObj.netloc + parsedObj.path
-                        if re.search(r".ics.uci.edu", crawled_url) != None \
-                            or re.search(r".cs.uci.edu", crawled_url) != None \
-                            or re.search(r".stat.uci.edu", crawled_url) != None \
-                            or re.search(r".informatics.uci.edu", crawled_url) != None \
-                            or re.search(r"today.uci.edu/department/information_computer_sciences", crawled_url) != None:
-                            self.hrefSet.add(crawled_url)
+# a implement of url validity
+def isValidUrl(url: str) -> bool:
+    parsedUrl = urlparse(url)
+    return ".ics.uci.edu" in parsedUrl.netloc \
+        or ".cs.uci.edu" in parsedUrl.netloc \
+        or ".informatics.uci.edu" in parsedUrl.netloc \
+        or ".stat.uci.edu" in parsedUrl.netloc \
+        or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc \
+        and "/calendar/" not in parsedUrl.path
                         
 def scraper(url, resp):
     #print(f"from scraper: {url} Status: {resp.status}")
@@ -42,12 +28,23 @@ def scraper(url, resp):
     return [link for link in links if is_valid(link)]
 
 def extract_next_links(url, resp):
-    # Implementation requred.
     if 200 <= resp.status < 400:
-        htmlParser = MyHTMLParser(resp.url)
-        htmlParser.feed(str(resp.raw_response.content))
-        return htmlParser.getHrefList()
+        links = set()
+        domain = urlparse(resp.url).netloc
+        try:
+            crawled_text = resp.raw_response.content.decode("utf8")
+        except UnicodeDecodeError:
+            crawled_text = resp.raw_response.content.decode("iso8859")     
+        soup = BeautifulSoup(crawled_text, 'lxml')
+        for atag in soup.find_all('a'):
+            href = atag.get("href")
+            if href != None:
+                url = handleHref(href, domain)
+                if isValidUrl(url):
+                    links.add(url)
+        return list(links)
     return []
+    # Implementation requred.
 
 def is_valid(url):
     try:
