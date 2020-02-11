@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from bs4.element import Comment
 import re
 from collections import defaultdict
 # def pageTextExtract(rawText):
@@ -24,6 +25,12 @@ class TextAnalyzer:
         self.text = ""
         self.wordCount = 0
         self.tokenDict = defaultdict(int)
+    def isVisibleTag(self, element):
+        if element.parent.name in ['style', 'script', 'head', 'title', 'meta', '[document]']:
+            return False
+        if isinstance(element, Comment):
+            return False
+        return True
     def textExtract(self):
         decode_text = ""
         try:
@@ -31,9 +38,10 @@ class TextAnalyzer:
         except UnicodeDecodeError:
             decode_text = self.rawText.decode("iso8859")    
         soup = BeautifulSoup(decode_text, 'lxml')
-        for script in soup(['style', 'script', 'head', 'title', 'meta', '[document]']):
-            script.extract()
-        self.text = soup.get_text()
+        rawBodyText = soup.findAll(text=True)
+        visibleText = filter(self.isVisibleTag, rawBodyText)
+        self.text = u" ".join(t.strip() for t in visibleText)
+        # print("from text extract", self.text)
     def execute(self):
         self.text = ""
         self.wordCount = 0
@@ -42,7 +50,7 @@ class TextAnalyzer:
         for line in self.text.splitlines():
             for w in re.findall(r"[a-zA-Z0-9]+", line):
                 self.wordCount += 1
-                self.tokenDict[w] += 1
+                self.tokenDict[w.lower()] += 1
     def getWordCount(self):
         return self.wordCount
     def updateOldDict(self, d):

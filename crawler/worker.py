@@ -5,6 +5,8 @@ from utils import get_logger
 from utils.textAnalyzer import TextAnalyzer
 from collections import defaultdict
 from scraper import scraper
+from urllib.parse import urlparse
+
 import time
 
 
@@ -16,6 +18,7 @@ class Worker(Thread):
         self.requestedSiteCount = 0
         self.crawledSiteCount = 0
         self.crawledSiteSet = set()
+        self.subDomainDict = defaultdict(int)
         self.maxTextWordCount = 0
         self.maxTextWordCountPage = ""
         self.tokenDict =  defaultdict(int)
@@ -28,6 +31,9 @@ class Worker(Thread):
                 self.logger.info("Frontier is empty. Stopping Crawler.")
                 with open("word-token.txt", "a") as outfile:
                     for k, v in self.tokenDict.items():
+                        outfile.write(f"{k} {v}\n")
+                with open("subdomin.txt", "a") as outfile:
+                    for k, v in self.subDomainDict.items():
                         outfile.write(f"{k} {v}\n")
                 break
             resp = download(tbd_url, self.config, self.logger)
@@ -55,6 +61,7 @@ class Worker(Thread):
                 if wc > self.maxTextWordCount:
                     self.maxTextWordCount = wc
                     self.maxTextWordCountPage = resp.url
+                self.subDomainDict[urlparse(tbd_url).netloc] += 1
                 
             self.crawledSiteSet.add(tbd_url)
             #print(f"site requested: {self.requestedSiteCount}\nsite crawled: {self.crawledSiteCount}")

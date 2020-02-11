@@ -15,11 +15,11 @@ def handleHref(href: str, domain: str) -> str:
 # a implement of url validity
 def isValidUrl(url: str) -> bool:
     parsedUrl = urlparse(url)
-    return ".ics.uci.edu" in parsedUrl.netloc \
+    return (".ics.uci.edu" in parsedUrl.netloc \
         or ".cs.uci.edu" in parsedUrl.netloc \
         or ".informatics.uci.edu" in parsedUrl.netloc \
         or ".stat.uci.edu" in parsedUrl.netloc \
-        or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc \
+        or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc) \
         and "wics.ics.uci.edu/events" not in (parsedUrl.netloc + parsedUrl.path)\
         and "/calendar/" not in parsedUrl.path \
         and "/pdf/" not in parsedUrl.path
@@ -61,6 +61,7 @@ def is_valid(url):
             + r"|data|dat|exe|bz2|tar|msi|bin|7z|psd|dmg|iso"
             + r"|epub|dll|cnf|tgz|sha1"
             + r"|thmx|mso|arff|rtf|jar|csv"
+            + r"|sql|txt|odc"
             + r"|rm|smil|wmv|swf|wma|zip|rar|gz)$", parsed.path.lower())
 
     except TypeError:
