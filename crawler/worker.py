@@ -9,7 +9,6 @@ from urllib.parse import urlparse
 
 import time
 
-
 class Worker(Thread):
     def __init__(self, worker_id, config, frontier):
         self.logger = get_logger(f"Worker-{worker_id}", "Worker")
@@ -18,12 +17,25 @@ class Worker(Thread):
         self.requestedSiteCount = 0
         self.crawledSiteCount = 0
         self.crawledSiteSet = set()
-        self.subDomainDict = defaultdict(int)
         self.maxTextWordCount = 0
         self.maxTextWordCountPage = ""
         self.tokenDict =  defaultdict(int)
         super().__init__(daemon=True)
-        
+    
+    def isValidWebPage(self, content):
+        header = ""
+        try:
+            header = content.decode("utf-8")[:9]
+        except UnicodeDecodeError:
+            header = content.decode("iso8859")[:9]
+        except:
+            pass
+        return header.upper() == "<!DOCTYPE"
+    
+    def writeUrltoFile(self, url):
+        with open("url-group.txt", "a") as f:
+            f.write(f"{url}\n")
+
     def run(self):
         while True:
             tbd_url = self.frontier.get_tbd_url()
@@ -31,9 +43,6 @@ class Worker(Thread):
                 self.logger.info("Frontier is empty. Stopping Crawler.")
                 with open("word-token.txt", "a") as outfile:
                     for k, v in self.tokenDict.items():
-                        outfile.write(f"{k} {v}\n")
-                with open("subdomin.txt", "a") as outfile:
-                    for k, v in self.subDomainDict.items():
                         outfile.write(f"{k} {v}\n")
                 break
             resp = download(tbd_url, self.config, self.logger)
@@ -44,15 +53,24 @@ class Worker(Thread):
                 f"\nsite crawled: {self.crawledSiteCount}"
                 f"\nmax word count: {self.maxTextWordCount} site: {self.maxTextWordCountPage}"
             )
-            scraped_urls = scraper(tbd_url, resp)
+
+            scraped_urls = []
             self.requestedSiteCount += 1
-            if 200 <= resp.status < 400:
+
+            if 200 <= resp.status < 400 \
+                and resp.raw_response != None \
+                and self.isValidWebPage(resp.raw_response.content):
+                # call scrapy to extract links and update counter
+                scraped_urls = scraper(tbd_url, resp)
+                self.crawledSiteCount += 1
+                self.writeUrltoFile(resp.url)
+
+                # analyze page text content
                 pageAnalyzer = TextAnalyzer(resp.raw_response.content)
                 pageAnalyzer.execute()  
-                self.crawledSiteCount += 1
                 #pageText = pageTextExtract(resp.raw_response.content)
-                #wc = wordCounter(pageText)
                 wc = pageAnalyzer.getWordCount()
+                #wc = wordCounter(pageText)
                 pageAnalyzer.updateOldDict(self.tokenDict)
                 monitor_word = self.tokenDict["and"]
                 self.logger.info(
@@ -61,8 +79,7 @@ class Worker(Thread):
                 if wc > self.maxTextWordCount:
                     self.maxTextWordCount = wc
                     self.maxTextWordCountPage = resp.url
-                self.subDomainDict[urlparse(tbd_url).netloc] += 1
-                
+
             self.crawledSiteSet.add(tbd_url)
             #print(f"site requested: {self.requestedSiteCount}\nsite crawled: {self.crawledSiteCount}")
             for scraped_url in scraped_urls:

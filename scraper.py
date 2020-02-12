@@ -1,7 +1,6 @@
 import re
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote_plus
 from bs4 import BeautifulSoup
-from encodings.aliases import aliases
 
 # turn href into a valid request url
 def handleHref(href: str, domain: str) -> str:
@@ -20,10 +19,9 @@ def isValidUrl(url: str) -> bool:
         or ".informatics.uci.edu" in parsedUrl.netloc \
         or ".stat.uci.edu" in parsedUrl.netloc \
         or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc) \
-        and "wics.ics.uci.edu/events" not in (parsedUrl.netloc + parsedUrl.path)\
+        and "wics.ics.uci.edu/events/category" not in (parsedUrl.netloc + parsedUrl.path)\
         and "/calendar/" not in parsedUrl.path \
-        and "/pdf/" not in parsedUrl.path
-                        
+        and "@" not in unquote_plus(url)
 def scraper(url, resp):
     #print(f"from scraper: {url} Status: {resp.status}")
     links = extract_next_links(url, resp)
@@ -61,7 +59,6 @@ def is_valid(url):
             + r"|data|dat|exe|bz2|tar|msi|bin|7z|psd|dmg|iso"
             + r"|epub|dll|cnf|tgz|sha1"
             + r"|thmx|mso|arff|rtf|jar|csv"
-            + r"|sql|txt|odc"
             + r"|rm|smil|wmv|swf|wma|zip|rar|gz)$", parsed.path.lower())
 
     except TypeError:
