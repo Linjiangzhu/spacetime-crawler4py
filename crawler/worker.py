@@ -6,7 +6,7 @@ from utils.textAnalyzer import TextAnalyzer
 from collections import defaultdict
 from scraper import scraper
 from urllib.parse import urlparse
-
+import hashlib
 import time
 
 class Worker(Thread):
@@ -20,6 +20,7 @@ class Worker(Thread):
         self.maxTextWordCount = 0
         self.maxTextWordCountPage = ""
         self.tokenDict =  defaultdict(int)
+        self.MD5SET = set()
         super().__init__(daemon=True)
     
     def isValidWebPage(self, content):
@@ -30,12 +31,19 @@ class Worker(Thread):
             header = content.decode("iso8859")[:9]
         except:
             pass
-        return header.upper() == "<!DOCTYPE"
+        sig = hashlib.md5(content).hexdigest()
+        if sig not in self.MD5SET:
+            self.MD5SET.add(sig)
+        else:
+            return False
+        return header.upper() == "<!DOCTYPE" or "<html>" in header
     
     def writeUrltoFile(self, url):
         with open("url-group.txt", "a") as f:
             f.write(f"{url}\n")
-
+    def writeWordCountToFile(self, wc, url):
+        with open("word-count.txt", "a") as f:
+            f.write(f"{wc} {url}\n")
     def run(self):
         while True:
             tbd_url = self.frontier.get_tbd_url()
@@ -71,11 +79,12 @@ class Worker(Thread):
                 #pageText = pageTextExtract(resp.raw_response.content)
                 wc = pageAnalyzer.getWordCount()
                 #wc = wordCounter(pageText)
+                self.writeWordCountToFile(wc, resp.url)
                 pageAnalyzer.updateOldDict(self.tokenDict)
                 monitor_word = self.tokenDict["and"]
-                self.logger.info(
-                    f"\nmonitor word 'and':{monitor_word}"
-                )
+                # self.logger.info(
+                #     f"\nmonitor word 'and':{monitor_word}"
+                # )
                 if wc > self.maxTextWordCount:
                     self.maxTextWordCount = wc
                     self.maxTextWordCountPage = resp.url

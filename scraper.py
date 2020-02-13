@@ -1,14 +1,18 @@
 import re
-from urllib.parse import urlparse, unquote_plus
+from urllib.parse import urlparse, unquote_plus, urljoin, urldefrag
 from bs4 import BeautifulSoup
 
+def dequery(url):
+    return urljoin(url, urlparse(url).path)
 # turn href into a valid request url
-def handleHref(href: str, domain: str) -> str:
+
+def handleHref(href: str, url: str) -> str:
     #print(f"NOW HANDLE DOMAIN: {domain} HREF: {href}")
-    parsedUrl = urlparse(href)
-    if parsedUrl.netloc == "":
-        return "http://" + domain + parsedUrl.path
-    return "http://" + parsedUrl.netloc + parsedUrl.path
+    caturl = urljoin(url, href)
+    keep, _ = urldefrag(caturl)
+    caturl = dequery(keep)
+    parsed = urlparse(caturl)
+    return caturl if parsed.scheme in ["http", "https"] else "http:" + caturl
 
 
 # a implement of url validity
@@ -20,8 +24,8 @@ def isValidUrl(url: str) -> bool:
         or ".stat.uci.edu" in parsedUrl.netloc \
         or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc) \
         and "wics.ics.uci.edu/events/category" not in (parsedUrl.netloc + parsedUrl.path)\
-        and "/calendar/" not in parsedUrl.path \
         and "@" not in unquote_plus(url)
+        # and "/calendar/" not in parsedUrl.path \
 def scraper(url, resp):
     #print(f"from scraper: {url} Status: {resp.status}")
     links = extract_next_links(url, resp)
@@ -39,9 +43,12 @@ def extract_next_links(url, resp):
         for atag in soup.find_all('a'):
             href = atag.get("href")
             if href != None:
-                url = handleHref(href, domain)
-                if isValidUrl(url):
-                    links.add(url)
+                new_url = handleHref(href, url)
+                if isValidUrl(new_url):
+                    # print(f"domain: {domain} link:{href}")
+                    # print(f"** {url} ** {href} ** {new_url}")
+                    links.add(new_url)
+        # input()
         return list(links)
     return []
     # Implementation requred.

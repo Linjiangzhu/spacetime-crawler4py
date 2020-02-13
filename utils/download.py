@@ -22,13 +22,13 @@ def download(url, config, logger=None):
             if r.can_fetch(url, f"{config.user_agent}"):
                  resp = requests.get(
                     f"http://{host}:{port}/",
-                    params=[("q", f"{url}"), ("u", f"{config.user_agent}")], timeout=1)
+                    params=[("q", f"{url}"), ("u", f"{config.user_agent}")], timeout=2)
             else:
                 raise ConnectionError
         else:
             resp = requests.get(
                 f"http://{host}:{port}/",
-                params=[("q", f"{url}"), ("u", f"{config.user_agent}")], timeout=1)
+                params=[("q", f"{url}"), ("u", f"{config.user_agent}")], timeout=2)
     except:
         return Response({
         "error": "",
