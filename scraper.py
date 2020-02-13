@@ -25,7 +25,8 @@ def isValidUrl(url: str) -> bool:
         or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc) \
         and "wics.ics.uci.edu/events/category" not in (parsedUrl.netloc + parsedUrl.path)\
         and "@" not in unquote_plus(url) \
-        and "www.ics.uci.edu/~eppstein/pix" not in url
+        and "www.ics.uci.edu/~eppstein/pix" not in url \
+        and len(re.findall(r"/", url)) <= 10
         # and "/calendar/" not in parsedUrl.path \
 def scraper(url, resp):
     #print(f"from scraper: {url} Status: {resp.status}")

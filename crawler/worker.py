@@ -8,6 +8,7 @@ from scraper import scraper
 from urllib.parse import urlparse
 import hashlib
 import time
+import re
 
 class Worker(Thread):
     def __init__(self, worker_id, config, frontier):
@@ -88,7 +89,10 @@ class Worker(Thread):
                 if wc > self.maxTextWordCount:
                     self.maxTextWordCount = wc
                     self.maxTextWordCountPage = resp.url
-
+                # psc = len(re.findall(r"/", resp.url)) 
+                # if psc >  self.pathslash:
+                #     self.pathslash = psc
+                 
             self.crawledSiteSet.add(tbd_url)
             #print(f"site requested: {self.requestedSiteCount}\nsite crawled: {self.crawledSiteCount}")
             for scraped_url in scraped_urls:
