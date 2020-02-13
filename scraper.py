@@ -23,14 +23,14 @@ def isValidUrl(url: str) -> bool:
         or ".informatics.uci.edu" in parsedUrl.netloc \
         or ".stat.uci.edu" in parsedUrl.netloc \
         or "today.uci.edu/department/information_computer_sciences" in parsedUrl.netloc) \
-        and "wics.ics.uci.edu/events/category" not in (parsedUrl.netloc + parsedUrl.path)\
+        and "wics.ics.uci.edu/events/" not in (parsedUrl.netloc + parsedUrl.path)\
         and "@" not in unquote_plus(url) \
         and "www.ics.uci.edu/~eppstein/pix" not in url \
         and "www.ics.uci.edu/ugrad/honors/degrees/" not in url \
         and "www.ics.uci.edu/ugrad/honors/sao/" not in url \
         and not ("www.ics.uci.edu/honors/" in url and len(re.findall(r"/", url)) >= 6) \
         and not ("www.ics.uci.edu/ugrad/honors/" in url and len(re.findall(r"/", url)) >= 7) \
-        and len(re.findall(r"/", url)) <= 10
+        # and len(re.findall(r"/", url)) <= 10
         # and "/calendar/" not in parsedUrl.path \
 def scraper(url, resp):
     #print(f"from scraper: {url} Status: {resp.status}")
@@ -44,7 +44,7 @@ def extract_next_links(url, resp):
         try:
             crawled_text = resp.raw_response.content.decode("utf8")
         except UnicodeDecodeError:
-            crawled_text = resp.raw_response.content.decode("iso8859")     
+            crawled_text = resp.raw_response.content.decode("iso8859")
         soup = BeautifulSoup(crawled_text, 'lxml')
         for atag in soup.find_all('a'):
             href = atag.get("href")

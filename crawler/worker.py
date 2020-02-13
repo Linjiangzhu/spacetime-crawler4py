@@ -27,9 +27,9 @@ class Worker(Thread):
     def isValidWebPage(self, content):
         header = ""
         try:
-            header = content.decode("utf-8")[:9]
+            header = content.decode("utf-8")[:150]
         except UnicodeDecodeError:
-            header = content.decode("iso8859")[:9]
+            header = content.decode("iso8859")[:150]
         except:
             pass
         sig = hashlib.md5(content).hexdigest()
@@ -37,7 +37,7 @@ class Worker(Thread):
             self.MD5SET.add(sig)
         else:
             return False
-        return header.upper() == "<!DOCTYPE" or "<html>" in header
+        return "<!DOCTYPE" in header.upper() or "<html>" in header
     
     def writeUrltoFile(self, url):
         with open("url-group.txt", "a") as f:
@@ -65,7 +65,6 @@ class Worker(Thread):
 
             scraped_urls = []
             self.requestedSiteCount += 1
-
             if 200 <= resp.status < 400 \
                 and resp.raw_response != None \
                 and self.isValidWebPage(resp.raw_response.content):
