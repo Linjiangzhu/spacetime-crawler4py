@@ -1,1 +1,1 @@
-python launch.py --restart
+python3 launch.py --restart

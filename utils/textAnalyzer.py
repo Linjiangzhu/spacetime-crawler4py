@@ -48,7 +48,7 @@ class TextAnalyzer:
         self.tokenDict = defaultdict(int)
         self.textExtract()
         for line in self.text.splitlines():
-            for w in re.findall(r"[a-zA-Z0-9]+", line):
+            for w in re.findall(r"[a-zA-Z0-9']+", line):
                 self.wordCount += 1
                 self.tokenDict[w.lower()] += 1
     def getWordCount(self):

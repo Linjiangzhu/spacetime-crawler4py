@@ -26,6 +26,10 @@ def isValidUrl(url: str) -> bool:
         and "wics.ics.uci.edu/events/category" not in (parsedUrl.netloc + parsedUrl.path)\
         and "@" not in unquote_plus(url) \
         and "www.ics.uci.edu/~eppstein/pix" not in url \
+        and "www.ics.uci.edu/ugrad/honors/degrees/" not in url \
+        and "www.ics.uci.edu/ugrad/honors/sao/" not in url \
+        and not ("www.ics.uci.edu/honors/" in url and len(re.findall(r"/", url)) >= 6) \
+        and not ("www.ics.uci.edu/ugrad/honors/" in url and len(re.findall(r"/", url)) >= 7) \
         and len(re.findall(r"/", url)) <= 10
         # and "/calendar/" not in parsedUrl.path \
 def scraper(url, resp):
@@ -68,6 +72,7 @@ def is_valid(url):
             + r"|data|dat|exe|bz2|tar|msi|bin|7z|psd|dmg|iso"
             + r"|epub|dll|cnf|tgz|sha1"
             + r"|thmx|mso|arff|rtf|jar|csv"
+            + r"|sql|img|apk"
             + r"|rm|smil|wmv|swf|wma|zip|rar|gz)$", parsed.path.lower())
 
     except TypeError:
